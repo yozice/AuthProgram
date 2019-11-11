@@ -85,7 +85,7 @@ namespace lr1
                             newForm.Show();
                             break;
                         }
-                        else if (user.password == textBox2.Text.ToString())
+                        else if (Crypter.DecryptPswd(user.password) == textBox2.Text)
                         {
                             ActSelForm newform = new ActSelForm(user, false);
                             newform.Owner = this;
