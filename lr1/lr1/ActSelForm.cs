@@ -62,8 +62,15 @@ namespace lr1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ViewUsersForm newForm = new ViewUsersForm();
-            newForm.ShowDialog();
+            try
+            {
+                ViewUsersForm newForm = new ViewUsersForm();
+                newForm.ShowDialog();
+            }
+            catch(NullReferenceException e1)
+            {
+
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -1,1 +1,3 @@
-Admin  0 False True
+Admin qwerty,+ 8 False True
+u1  0 False False
+u2  0 False False

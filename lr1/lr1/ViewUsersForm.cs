@@ -18,7 +18,6 @@ namespace lr1
         {
             index = 1;
             dBaseF4 = dataBase.dBase;
-
             if (dataBase.dBase.Count == 1)
             {
                 button1.Enabled = false;
