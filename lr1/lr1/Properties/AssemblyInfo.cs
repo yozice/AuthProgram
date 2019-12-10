@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("lr1")]
+[assembly: AssemblyTitle("lr4")]
 [assembly: AssemblyDescription("Описание: приложение для авторизации пользователей")]
-[assembly: AssemblyConfiguration("Версия 1")]
+[assembly: AssemblyConfiguration("Версия 3")]
 [assembly: AssemblyCompany("гр. А-13-16")]
-[assembly: AssemblyProduct("Лабораторная работа #1 по Защите Данных")]
-[assembly: AssemblyCopyright("Авторские права: Бабушкин Сергей")]
+[assembly: AssemblyProduct("Лабораторная работа #4 по Защите Данных")]
+[assembly: AssemblyCopyright("Авторские права: Бабушкин Сергей©")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
