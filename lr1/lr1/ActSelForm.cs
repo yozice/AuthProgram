@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Security.Cryptography;
 
 namespace lr1
 {
@@ -25,17 +26,8 @@ namespace lr1
 
         private void ActSelForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            using (StreamWriter sw = new StreamWriter(@"data.txt"))
-            {
-                for (int i = 0; i < dataBase.dBase.Count; i++)
-                {
-                    sw.WriteLine(dataBase.dBase[i].name + " " +
-                        dataBase.dBase[i].password + " " +
-                        dataBase.dBase[i].len_pswrd + " " +
-                        dataBase.dBase[i].is_blocked + " " +
-                        dataBase.dBase[i].is_restricted);
-                }
-            }
+            NewPhraseForm nfForm = new NewPhraseForm();
+            nfForm.ShowDialog();
             this.Owner.Show();
         }
 

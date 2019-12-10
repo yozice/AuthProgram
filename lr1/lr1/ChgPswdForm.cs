@@ -95,7 +95,7 @@ namespace lr1
                 {
                     if (textBox1.Text == textBox2.Text)
                     {
-                        userF3.password = textBox1.Text;
+                        userF3.password = Crypter.EncryptPswd(textBox1.Text);
                         userF3.len_pswrd = textBox1.Text.Length;
                         pswChanged = true;
                     }

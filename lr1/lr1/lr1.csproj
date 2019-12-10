@@ -52,6 +52,12 @@
     <Compile Include="AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckPhraseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckPhraseForm.Designer.cs">
+      <DependentUpon>CheckPhraseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Crypter.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -72,6 +78,12 @@
     <Compile Include="ChgPswdForm.Designer.cs">
       <DependentUpon>ChgPswdForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewPhraseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPhraseForm.Designer.cs">
+      <DependentUpon>NewPhraseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewUsersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,9 @@
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CheckPhraseForm.resx">
+      <DependentUpon>CheckPhraseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChgPswdForm.resx">
       <DependentUpon>ChgPswdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPhraseForm.resx">
+      <DependentUpon>NewPhraseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewUsersForm.resx">
       <DependentUpon>ViewUsersForm.cs</DependentUpon>

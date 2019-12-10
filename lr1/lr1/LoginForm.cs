@@ -24,41 +24,41 @@ namespace lr1
         {
             cntFails = 0;
             prevName = "";
-            try
-            {
-                using (StreamReader sr = new StreamReader(@"data.txt"))
-                {
-                    string line;
-                    string[] lineSplitted = new string[5];
-                    profile user;
-                    while (!sr.EndOfStream)
-                    {
-                        line = sr.ReadLine();
-                        lineSplitted = line.Split(' ');
-                        user.name = lineSplitted[0];
-                        user.password = lineSplitted[1];
-                        user.len_pswrd = Convert.ToInt32(lineSplitted[2]);
-                        user.is_blocked = Convert.ToBoolean(lineSplitted[3]);
-                        user.is_restricted = Convert.ToBoolean(lineSplitted[4]);
-                        dataBase.dBase.Add(user);
-                    }
-                }
-            }
-            catch(FileNotFoundException e1)
-            {
-                profile user;
-                user.name = "Admin";
-                user.password = "";
-                user.len_pswrd = 0;
-                user.is_blocked = false;
-                user.is_restricted = true;
-                dataBase.dBase.Add(user);
-            }   
+            //try
+            //{
+            //    using (StreamReader sr = new StreamReader(@"data.txt"))
+            //    {
+            //        string line;
+            //        string[] lineSplitted = new string[5];
+            //        profile user;
+            //        while (!sr.EndOfStream)
+            //        {
+            //            line = sr.ReadLine();
+            //            lineSplitted = line.Split(' ');
+            //            user.name = lineSplitted[0];
+            //            user.password = lineSplitted[1];
+            //            user.len_pswrd = Convert.ToInt32(lineSplitted[2]);
+            //            user.is_blocked = Convert.ToBoolean(lineSplitted[3]);
+            //            user.is_restricted = Convert.ToBoolean(lineSplitted[4]);
+            //            dataBase.dBase.Add(user);
+            //        }
+            //    }
+            //}
+            //catch(FileNotFoundException e1)
+            //{
+            //    profile user;
+            //    user.name = "Admin";
+            //    user.password = "";
+            //    user.len_pswrd = 0;
+            //    user.is_blocked = false;
+            //    user.is_restricted = true;
+            //    dataBase.dBase.Add(user);
+            //}   
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Owner.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -132,6 +132,10 @@ namespace lr1
         {
             AboutBox1 newForm = new AboutBox1();
             newForm.ShowDialog();
+        }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
         }
     }
 }
